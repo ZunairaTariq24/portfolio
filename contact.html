@@ -27,12 +27,20 @@
 
   <section class="projects-preview">
 
-    <form "https://formsubmit.co/zunairatariq985@gmail.com" method="POST" style="max-width: 600px; margin: 0 auto;">
-      <input type="text" placeholder="Your Name" required style="width: 100%; padding: 1rem; margin: 1rem 0; border-radius: 8px; border: 1px solid #ccc;">
-      <input type="email" placeholder="Your Email" required style="width: 100%; padding: 1rem; margin: 1rem 0; border-radius: 8px; border: 1px solid #ccc;">
-      <textarea placeholder="Your Message" rows="6" required style="width: 100%; padding: 1rem; margin: 1rem 0; border-radius: 8px; border: 1px solid #ccc;"></textarea>
-      <button type="submit" class="cta">Send Message</button>
-    </form>
+<form action="https://formsubmit.co/zunairatariq985@gmail.com" method="POST" style="max-width: 600px; margin: 0 auto;">
+  <!-- Optional hidden inputs for behavior control -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+  <input type="hidden" name="_template" value="box">
+  <!-- You can also redirect to a thank-you page -->
+  <!-- <input type="hidden" name="_next" value="thankyou.html"> -->
+
+  <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 1rem; margin: 1rem 0; border-radius: 8px; border: 1px solid #ccc;">
+  <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 1rem; margin: 1rem 0; border-radius: 8px; border: 1px solid #ccc;">
+  <textarea name="message" placeholder="Your Message" rows="6" required style="width: 100%; padding: 1rem; margin: 1rem 0; border-radius: 8px; border: 1px solid #ccc;"></textarea>
+  <button type="submit" class="cta">Send Message</button>
+</form>
+
   </section>
 
   <footer>
